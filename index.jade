@@ -17,24 +17,50 @@ html(lang="en")
     link(rel="stylesheet",type="text/css",href="index.css")
     script(type="text/javascript",src="index.js")
   body
-    nav.navbar.navbar-default.fixed-top
+    nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
       .container-fluid
         .navbar-header
-        a.navbar-brand(href="#") Brand
+        a.navbar-brand(href="#") 睡覺者聯盟
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li: a(href="#about") 關於
+            li: a(href="#result") 結果
+            li: a(href="#questionnaire") 問卷
+            li: a(href="#join") 加入專案
+    #landing
+      .title 
+        div 睡覺者聯盟
+        div 你睡不著嗎？我睡得著
+
     #root
+      a#brief(name="brief")
       h2 睡不著
       p 為什麼睡不著為什麼睡不著為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦？
       p 為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦為什麼睡不著啦
       hr
-      h3 結果
-      iframe(width='100%',height='520',frameborder='0',src='https://tkrby.cartodb.com/viz/7f5d20d4-a4c5-11e5-895c-0ea31932ec1d/embed_map',allowfullscreen,webkitallowfullscreen,mozallowfullscreen,oallowfullscreen,msallowfullscreen)
+      a#result(name="result")
+      h3 到哪裡做睡眠檢查？
+      .pull-right: a(href="http://www.tssm.org.tw/check.php",target="_blank") 來源 / 台灣睡眠醫學學會
+      p 全國睡眠檢查地點主要集中在下列區域：
+      ul
+        li 大台北地區：19 間
+        li 中彰投：16 間
+        li 雲嘉：6 間
+        li 高雄：4 間
+        li 台南：2 間
+        li 宜蘭：1 間
+        li 花蓮：1 間
+      iframe(width='100%',height='520',frameborder='0',src='https://sungchien.cartodb.com/viz/c5286b3a-ac6a-11e5-8fca-0ea31932ec1d/embed_map',allowfullscreen,webkitallowfullscreen,mozallowfullscreen,oallowfullscreen,msallowfullscreen)
       hr
+      a#questionnaire(name="questionnaire")
       h3 問卷
       p 想參與我們的專案嗎？來吧
 
-      iframe(width='100%',height='700',frameborder='0',src="https://docs.google.com/forms/d/1CCWQwyFzPUUY6CJ896J4qV2qYz1LWy4_MspMO6pqR-c/viewform",allowfullscreen,webkitallowfullscreen,mozallowfullscreen,oallowfullscreen,msallowfullscreen)
+      iframe(width='100%',height='700',frameborder='0',src="https://docs.google.com/forms/d/1NoCBV0C6rpiI0y6_bnzXfEw39h4zzAvDKOKHTN2wdpA/viewform?c=0&w=1",allowfullscreen,webkitallowfullscreen,mozallowfullscreen,oallowfullscreen,msallowfullscreen)
       hr
-      h3 共筆
+      a#join(name="join")
+      h3 加入專案 / 共筆
       a(href="https://hackpad.com/TMpSu5nM7Tc") https://hackpad.com/TMpSu5nM7Tc
       #footer
+        .pull-left: a(href="https://www.twreporter.org/",target="_blank") 報導者
         .pull-right: a(href="http://github.com/zbryikt/insomnia") Source
