@@ -33,8 +33,9 @@ html(lang="en")
         div 我們的任務不是偷取夢境，而是探討睡眠 &nbsp; &nbsp;
     #root
       a#brief(name="brief")
+      br
       .text-center
-        h2 「睡滿七小時，是真實還是夢境？」你顫抖的問。
+        h2(style="color:#d63d1f"): big 「睡滿七小時，是真實還是夢境？」你顫抖的問。
         br
         p 邁入成年，你的睡眠彷彿置身戰爭現場。
         br
@@ -57,26 +58,33 @@ html(lang="en")
       hr
       a#result(name="result")
       h3 到哪裡做睡眠檢查？
-      .pull-right: a(href="http://www.tssm.org.tw/check.php",target="_blank") 來源 / 台灣睡眠醫學學會
-      p 全國睡眠檢查地點主要集中在下列區域：
-      ul
-        li 大台北地區：19 間
-        li 中彰投：16 間
-        li 雲嘉：6 間
-        li 高雄：4 間
-        li 台南：2 間
-        li 宜蘭：2 間
-        li 花蓮：1 間
-      iframe(width='100%',height='520',frameborder='0',src='https://sungchien.cartodb.com/viz/c5286b3a-ac6a-11e5-8fca-0ea31932ec1d/embed_map',allowfullscreen,webkitallowfullscreen,mozallowfullscreen,oallowfullscreen,msallowfullscreen)
+      .row
+        .col-sm-8
+          iframe(width='100%',height='520',frameborder='0',src='https://sungchien.cartodb.com/viz/c5286b3a-ac6a-11e5-8fca-0ea31932ec1d/embed_map',allowfullscreen,webkitallowfullscreen,mozallowfullscreen,oallowfullscreen,msallowfullscreen)
+        .col-sm-4
+          br
+          p 全國睡眠檢查地點主要集中在下列區域：
+          ul
+            li 大台北地區：19 間
+            li 中彰投：16 間
+            li 雲嘉：6 間
+            li 高雄：4 間
+            li 台南：2 間
+            li 宜蘭：2 間
+            li 花蓮：1 間
+          br
+          small: a(href="http://www.tssm.org.tw/check.php",target="_blank") 來源 / 台灣睡眠醫學學會
+
       hr
       a#questionnaire(name="questionnaire")
       h3 問卷
-      p 想參與我們的專案嗎？來吧
+      p 想參與我們的專案嗎？先參與我們的睡眠品質調查吧！
 
       iframe(width='100%',height='700',frameborder='0',src="https://docs.google.com/forms/d/1NoCBV0C6rpiI0y6_bnzXfEw39h4zzAvDKOKHTN2wdpA/viewform?c=0&w=1",allowfullscreen,webkitallowfullscreen,mozallowfullscreen,oallowfullscreen,msallowfullscreen)
       hr
       a#join(name="join")
       h3 加入專案 / 共筆
+      br
       a(href="https://hackpad.com/TMpSu5nM7Tc") https://hackpad.com/TMpSu5nM7Tc
       #footer
         .pull-left: a(href="https://www.twreporter.org/",target="_blank") 報導者
